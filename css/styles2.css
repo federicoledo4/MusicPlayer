@@ -1,0 +1,50 @@
+.jumbotron {
+    margin-top: 10px;
+    color: white;
+    background: #003e7c;
+    color: white; }
+  
+  p {
+    background: #8e8989; }
+  
+  footer {
+    background: #003e7c;
+    color: white; }
+  
+  .card-hotel {
+    flex: 1, 150px;
+    padding: 2px,5px,2px,5px; }
+  
+  .button-reserved {
+    width: 100%; }
+  
+  .bg-black {
+    background-color: black;
+    color: white; }
+  
+  hr {
+    color: white; }
+  
+  .bg-red {
+    background: red;
+    color: white; }
+  
+  .bg-white {
+    background: white; }
+  
+  .icon {
+    width: 1rem;
+    height: 1rem; }
+  
+  .bg-image {
+    background-image: url("../img/imagen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  
+  .orange {
+    color: orange; }
+  
+  .img-carousel {
+    height: 50vh;
+    width: 100%; }
+  

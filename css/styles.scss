@@ -1,0 +1,54 @@
+$yellow: yellow;
+$green: green;
+$red:red;
+$white:white;
+$blue:rgb(0, 62, 124);
+@mixin margenYColor($top, $color){
+    margin-top: $top;
+    color: $color;
+}
+
+.jumbotron{
+    @include margenYColor(10px, $white);
+    background: $blue;
+    color: $white;
+}
+p{background: rgb(142, 137, 137);}
+footer{
+    background: rgb(0, 62, 124);
+    color: $white;
+    
+}
+.card-hotel{
+    flex: 1, 150px;
+    padding: 2px,5px,2px,5px;
+}
+.button-reserved{
+    width: 100%;
+}
+.bg-black{
+    background-color: black;
+    color: $white;
+}
+hr{color: $white;}
+.bg-red{
+background:$red;
+color: $white;
+}
+.bg-white{background:$white;}
+.icon{
+    width: 1rem;
+    height: 1rem;
+}
+.bg-image{
+    background-image: url("../img/imagen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.orange{
+    color: orange;
+}
+.img-carousel{
+    height: 50vh;
+    width: 100%;
+}
