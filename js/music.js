@@ -14,6 +14,10 @@ function changeMusic(num){
     if (contadorMusical>songCount) {
       contadorMusical=0;
     }
+    if (contadorMusical<0) {
+      contadorMusical=10;
+    }
+    
 
     if (contadorMusical===0) {
       hablar("No tomes nada");
@@ -86,7 +90,7 @@ function changeMusic(num){
       playSong("audio/songSrTobias.mp3", "la cancion del señor Tobias ¡siiii!", "Sr.Tobias Song", "Se nor. to bias... siiii");
     }
     if (contadorMusical===10) {
-      playSong("audio/songStreesDistortionGuitar.mp3", "", "Strees Distortion Guitar Song", "Cuidao que te quedas sin hp");
+      playSong("audio/songStreesDistortionGuitar.mp3", "Toma una cancion estresante", "Strees Distortion Guitar Song", "Cuidao que te quedas sin hp");
     }
     
 }
