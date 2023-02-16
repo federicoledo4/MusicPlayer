@@ -81,13 +81,13 @@ function changeMusic(num){
       
     }
     if (contadorMusical===7) {
-      playSong("audio/songCave2.mp3", "Toma una segunda cancion de cueva", "Cave song 2", "mmm... Caves");
+      playSong("audio/songCave2 (1).mp3", "Toma una segunda cancion de cueva", "Cave song 2", "mmm... Caves");
     }
     if (contadorMusical===8) {
-      playSong("audio/songRock3.mp3", "Toma la tercera cancion de rock", "Rock Song 3", "mmm... Rock");
+      playSong("audio/songRock3 (2).mp3", "Toma la tercera cancion de rock", "Rock Song 3", "mmm... Rock");
     }
     if (contadorMusical===9) {
-      playSong("audio/songSrTobias.mp3", "la cancion del señor Tobias ¡siiii!", "Sr.Tobias Song", "Se nor. to bias... siiii");
+      playSong("audio/songSrTobias (1).mp3", "la cancion del señor Tobias ¡siiii!", "Sr.Tobias Song", "Se nor. to bias... siiii");
     }
     if (contadorMusical===10) {
       playSong("audio/songStreesDistortionGuitar.mp3", "Toma una cancion estresante", "Strees Distortion Guitar Song", "Cuidao que te quedas sin hp");
