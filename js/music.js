@@ -1,4 +1,5 @@
-var contadorMusical=0
+var contadorMusical=0;
+var songCount=6;
 
 document.addEventListener("DOMContentLoaded", function(){
     document.body.innerHTML+=`<audio id="audio" src="" autoplay loop></audio>`;
@@ -8,7 +9,10 @@ function changeMusic(num){
     if(num===1){
         contadorMusical+=1;
     }else{
-        contadorMusical-=1
+        contadorMusical-=1;
+    }
+    if (contadorMusical>songCount) {
+      contadorMusical=0;
     }
 
     if (contadorMusical===0) {
@@ -70,7 +74,48 @@ function changeMusic(num){
       },4000);
       document.getElementById("Name").innerHTML="Wtf Song"
       document.getElementById("Description").innerHTML="A bad quimera of sounds"
-      contadorMusical=-1;
+      
+    }
+    if (contadorMusical===7) {
+      playSong("audio/songCave2.mp3", "Toma una segunda cancion de cueva", "Cave song 2", "mmm... Caves");
+    }
+    if (contadorMusical===8) {
+      playSong("audio/songRock3.mp3", "Toma la tercera cancion de rock", "Rock Song 3", "mmm... Rock");
+    }
+    if (contadorMusical===9) {
+      playSong("audio/songSrTobias.mp3", "la cancion del señor Tobias ¡siiii!", "Sr.Tobias Song", "Se nor. to bias... siiii");
+    }
+    if (contadorMusical===10) {
+      playSong("audio/songStreesDistortionGuitar.mp3", "", "Strees Distortion Guitar Song", "Cuidao que te quedas sin hp");
     }
     
+}
+
+function playSong(songPath, talk, name, description){
+
+  document.getElementById("audio").src="";
+
+  if (talk!==null) {
+      hablar(talk);
+  }else{
+    hablar("No se el nombre de esta cancion")
   }
+
+  setTimeout(() => {
+  document.getElementById("audio").src=songPath;
+  },4000);
+
+  if (name!==null) {
+    document.getElementById("Name").innerHTML=name;  
+  }else{
+    document.getElementById("Name").innerHTML="no se";
+  }
+
+  if(description!==null){
+    document.getElementById("Description").innerHTML=description;
+  }else{
+    document.getElementById("Description").innerHTML="vacio como tu alma :v";
+  }
+      
+  songCount+=1;
+}
